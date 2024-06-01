@@ -16,9 +16,9 @@
         <a href="" class="navbar-brand ps-3 text-danger"> <i class="fab fa-affiliatetheme"></i> FAHIZ SHOP</a>
 
         <ul class="nav me-5">
-            <li class="nav-item text-secondary dropdown"> <a class="nav-link text-secondary dropdown-toggle"> <span
+            <li  class="nav-item text-secondary dropdown"> <a class="nav-link text-secondary dropdown-toggle"> <span
                         class="side-icon"><i class="fas fa-envelope"></i></span> Message</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" >
                     <li class="dropdown-item"> <a href="">Action</a> </li>
                 </ul>
             </li>
@@ -98,8 +98,7 @@
             </div> <!-- content end  -->
         </div>
     </div>
-
-
+<script src="/js/jquery.js"></script>
+@stack('script');
 </body>
-
 </html>

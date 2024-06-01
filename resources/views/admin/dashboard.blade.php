@@ -180,5 +180,10 @@
 
 
 
-
 @endsection
+
+
+
+@push('script')
+    <script src="/js/my.js"></script>
+@endpush
