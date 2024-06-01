@@ -5,5 +5,5 @@ $(document).ready(function(){
         let sibling =  $(this).siblings(`.dropdown`).children(`.dropdown-menu`).hide();
     })
 
-    
+
 }) //end jquery statment;

@@ -56,8 +56,8 @@
                         <p class="card-text text-dark "> <b>$90.00</b> </p>
 
                         <div class="btn-group d-flex justify-content-center">
-                            <div class="btn btn-outline-info">Edit</div>
-                            <div class="btn btn-outline-danger">Delete</div>
+                            <div class="btn btn-outline-info"> <i class="fas fa-pen"></i> Edit</div>
+                            <div class="btn btn-outline-danger"> <i class="fas fa-trash-can"></i> Delete</div>
                         </div>
                     </div>
                 </div>
@@ -68,8 +68,8 @@
                         <p class="card-text text-dark "> <b>$90.00</b> </p>
 
                         <div class="btn-group d-flex justify-content-center">
-                            <div class="btn btn-outline-info">Edit</div>
-                            <div class="btn btn-outline-danger">Delete</div>
+                            <div class="btn btn-outline-info"> <i class="fas fa-pen"></i> Edit</div>
+                            <div class="btn btn-outline-danger"> <i class="fas fa-trash-can"></i> Delete</div>
                         </div>
                     </div>
                 </div>
@@ -80,8 +80,8 @@
                         <p class="card-text text-dark "> <b>$90.00</b> </p>
 
                         <div class="btn-group d-flex justify-content-center">
-                            <div class="btn btn-outline-info">Edit</div>
-                            <div class="btn btn-outline-danger">Delete</div>
+                            <div class="btn btn-outline-info"> <i class="fas fa-pen"></i> Edit</div>
+                            <div class="btn btn-outline-danger"> <i class="fas fa-trash-can"></i> Delete</div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
             </div>
         </div>
 
-    </div>  
+    </div>
 
     {{-- start recent orders  --}}
     <div class="row my-4">
@@ -176,10 +176,7 @@
 
         </div>
     </div>
-   {{-- End Recent Orders  --}}
-
-
-
+    {{-- End Recent Orders  --}}
 @endsection
 
 
