@@ -14,7 +14,10 @@
     <!-- start navabr  -->
     <nav class="navbar navbar-expand-lg justify-content-between" style="background-color:#191C24;">
         <a href="" class="navbar-brand ps-3 text-danger"> <i class="fab fa-affiliatetheme"></i> FAHIZ SHOP</a>
-
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="nav me-5">
             <li  class="nav-item text-secondary dropdown"> <a class="nav-link text-secondary dropdown-toggle"> <span
                         class="side-icon"><i class="fas fa-envelope"></i></span> Message</a>
@@ -37,6 +40,7 @@
                 </ul>
             </li>
         </ul>
+          </div>
     </nav> <!-- end navbar --> <!-- start 2nd row sidebar And Content  -->
     <div class="container-fluid">
         <div class="row">
