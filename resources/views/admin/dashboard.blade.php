@@ -5,11 +5,11 @@
         <div class="col-md-12 d-flex justify-content-between">
             <div class="card-show">
                 <div class="card-icon">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-user-plus"></i>
                 </div>
                 <div class="card-bodyes">
-                    <h5 style="font-weight: 400;" class="text-secondary">Today Sale</h5>
-                    <p class="card-text"> $10000 </p>
+                    <h5 style="font-weight: 400;" class="text-secondary">Daily Signups</h5>
+                    <p class="card-text">1,567 </p>
                 </div>
             </div>
             <div class="card-show">
@@ -17,8 +17,8 @@
                     <i class="fas fa-shopping-cart"></i>
                 </div>
                 <div class="card-bodyes">
-                    <h5 style="font-weight: 400;" class="text-secondary">Total Users</h5>
-                    <p class="card-text"> $10000 </p>
+                    <h5 style="font-weight: 400;" class="text-secondary">Daily Visitors</h5>
+                    <p class="card-text"> 56,600 </p>
                 </div>
             </div>
             <div class="card-show">
@@ -50,7 +50,7 @@
             <h4 class="text-light text-center"> Latest Product </h4>
             <div class="card-head d-flex justify-content-between">
                 <div class="card" style="width:13rem;border:2px solid gray">
-                    <img src="/images/product-2.jpg" class="card-img-top rounded-top" width="100%" alt="" />
+                    <img src="/images/product-10.jpg" class="card-img-top rounded-top" width="100%" alt="" />
                     <div class="card-body">
                         <h6 class="card-title text-muted">T-shirt For men</h6>
                         <p class="card-text text-dark "> <b>$90.00</b> </p>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="card" style="width:13rem;border:2px solid gray">
-                    <img src="/images/product-4.jpg" class="card-img-top rounded-top" width="100%" alt="" />
+                    <img src="/images/product-10.jpg" class="card-img-top rounded-top" width="100%" alt="" />
                     <div class="card-body">
                         <h6 class="card-title text-muted">T-shirt For men</h6>
                         <p class="card-text text-dark "> <b>$90.00</b> </p>
@@ -73,11 +73,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" style="width:13rem;border:2px solid gray">
-                    <img src="/images/product-3.jpg" class="card-img-top rounded-top" width="100%" alt="" />
+                <div class="card bg-dark" style="width:13rem;border:2px solid gray">
+                    <img src="/images/product-10.jpg" class="card-img-top rounded-top" width="100%" alt="" />
                     <div class="card-body">
-                        <h6 class="card-title text-muted">T-shirt For men</h6>
-                        <p class="card-text text-dark "> <b>$90.00</b> </p>
+                        <h6 class="card-title  text-light">T-shirt For men</h6>
+                        <p class="card-text  text-light"> <b>$90.00</b> </p>
 
                         <div class="btn-group d-flex justify-content-center">
                             <div class="btn btn-outline-info"> <i class="fas fa-pen"></i> Edit</div>
