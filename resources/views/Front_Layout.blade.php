@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <title>Title</title>
+    <title> Lizay @yield('title') </title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,6 +12,7 @@
 </head>
 
 <body>
+
 
     <nav class="navbar navbar-expand-lg justify-content-around">
         <div class="nav-left">
@@ -42,14 +42,23 @@
                     style="width:11rem;height:35px">
             </div>
             <div class="cart position-relative mx-4">
-                <i style="font-size:30px;font-weight:700;" class="fa-solid fa-bag-shopping"></i>
+                <i style="font-size:30px;font-weight:600;" class="fa-solid fa-bag-shopping"></i>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     99+
                     <span class="visually-hidden">unread messages</span>
                 </span>
             </div>
             <div class="cart position-relative">
-                <i style="font-size:30px" class="fa-solid fa-list"></i>
+                <i style="font-size:30px;" class="fa-solid fa-list"></i>
+            </div>
+            <div class="cart position-relative mx-4 dropdown dropdown-toggle">
+                <i style="font-size:25px;font-weight:300;" class="fas fa-user"></i>
+              <ul class="dropdown-menu">
+              @guest
+              <li class="dropdown-item"><a href="{{route('login-page')}}" class="dropdown-link">Sign In</a></li>
+              <li class="dropdown-item"><a href="{{ route('register-page') }}" class="dropdown-link">Sign Up</a></li>
+              @endguest
+              </ul>
             </div>
         </div>
     </nav>
@@ -139,7 +148,7 @@
     <hr>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 mb-5">
                 <ul class="footer-link nav">
                     <li class="nav-item "> <a class="nav-link text-muted" href="">About Us</a> </li>
                     <li class="nav-item "> <a class="nav-link text-muted" href="">Contact Us</a> </li>
@@ -179,6 +188,10 @@
             </div>
         </div>
     </div>
+
+
+
+    @stack('js')
 </body>
 
 </html>

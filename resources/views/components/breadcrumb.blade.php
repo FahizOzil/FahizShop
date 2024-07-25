@@ -1,8 +1,9 @@
-<div class="file-link">
+
+<div class="file-link " style="top: 33px">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ url()->previous() }}">{{ $previous_file }}</a></li>
-            <li class="breadcrumb-item" ><a href=" {{ url()->current() }} "> {{ $current_url }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ route("home-page") }}"> Home   </a></li>
+            <li class="breadcrumb-item active" ><a class="active" href="{{ url()->current() }} "> {{ pathinfo(url()->current() , PATHINFO_FILENAME) }}</a></li>
             {{ $slot }}
         </ol>
       </nav>

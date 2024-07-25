@@ -1,4 +1,15 @@
 /* homePage  */
+a{
+    cursor: pointer;
+    color: #222 !important;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.active{
+    color: red !important;
+}
 .top-ranking {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -123,10 +134,58 @@
     position: relative;
     display: table;
     margin-bottom: 20px;
-    font-family: ui-monospace;
     margin-top: 15px;
 }
 
 .more-details h5 , .more-details p{
     text-align: center !important;
+}
+
+.show{
+    display: block!important;
+}
+
+.dropdown-toggle{
+    color: #222;
+    font-weight: 500;   
+    font-size: 17px;
+    font-family: ui-monospace;
+}
+
+.sidebar-dropdownMenu{
+    background-color: white!important;
+    border: none;
+   position: relative;
+    padding: 10px!important;        
+    width: 100%!important;
+}   
+.dropdown-menu li{
+    padding-left: 5px;
+}
+.dropdown-menu li:hover{
+    background-color: rgb(213, 49, 3)!important;
+    color: white!important;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.sidebar-head{
+    margin-left: 50px;
+}
+
+
+
+.product-head{
+    background-color: rgb(213, 201, 201);
+    padding: 13px 0;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+
+.show-pages span{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }

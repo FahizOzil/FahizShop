@@ -8,10 +8,10 @@ use Illuminate\View\Component;
 
 class card extends Component
 {
-    
-    public function __construct(public string $title , public string $url,public string $price)
+   public $id;
+    public function __construct(public string $title , public string $url,public string $price , $id = null)
     {
-        //
+        $this->id = $id;
     }
 
     // function PriceAndDes(){

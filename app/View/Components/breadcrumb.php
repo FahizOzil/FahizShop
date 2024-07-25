@@ -8,12 +8,11 @@ use Illuminate\View\Component;
 
 class breadcrumb extends Component
 {
-   public $previous_file;
-   public $current_url;
-    public function __construct($prev , $current)
+//    public $previous_file;
+//    public $current_url;
+    public function __construct()
     {
-        $this->previous_file = $prev;
-        $this->current_url = $current;
+    
     }
 
     /**

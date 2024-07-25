@@ -3,24 +3,21 @@
     <link rel="stylesheet" href="css/style.css">
 @endpush
 
-@php
-    $previous_file = pathinfo(url()->previous(), PATHINFO_FILENAME);
-    $current_url = pathinfo(url()->current(), PATHINFO_FILENAME);
-
-    if ($previous_file == '127.0.0' || $previous_file == $current_url) {
-        $previous_file = 'Home';
-    }
-@endphp
 
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 position-relative d-flex justify-content-center">
+            <div class="col-md-12 position-relative d-flex justify-content-center align-items-center">
                 <div class="contact-slider my-3">
                     <img src="images/shopSlider.jpg" width="100%" alt="">
+                    
                 </div>
+                <div class="slider-text position-absolute d-flex ">
+                    <h3  style="text-transform:uppercase;font-family:Arial, Helvetica, sans-serif;">Contact Us</h3>
+                    <x-breadcrumb  />
+                  </div>
 
-                <x-breadcrumb :prev=$previous_file :current=$current_url />
+                
 
             </div>
         </div>
