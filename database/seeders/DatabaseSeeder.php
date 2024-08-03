@@ -18,21 +18,21 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
-        // User::create([
-        //     'full_name' => 'fahiz ozil',
-        //     'username' => 'fahizozil',
-        //     'email' => 'fahizozil17@gmail.com',
-        //     'phone_number' => '03021203890',
-        //     'password' => bcrypt('fahiz123'),
-        //     'address' => 'haji shah ali goth sharafi',
-        //     'status' => 'active',
-        //     'created_at' => now(),
-        //     'updated_at' => now(),
-        // ]);
+        User::create([
+            'full_name' => 'liza',
+            'username' => 'lizaozil',
+            'email' => 'lizaozil17@gmail.com',
+            'phone_number' => '03021203890',
+            'password' => 'lizaa123',
+            'address' => 'haji shah ali goth sharafi',
+            'status' => 'active',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
-        // Categorie::factory(10)->create();
-        // sub_categorie::factory(100)->create();
-        Product::factory(10)->create();
+        Categorie::factory(10)->create();
+        sub_categorie::factory(100)->create();
+        // Product::factory(10)->create();
 
     }
 

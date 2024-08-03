@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('address')->nullable();
             $table->string('status')->default(1);
+            $table->tinyInteger('role')->default(0);
             $table->timestamps();
         });
     }

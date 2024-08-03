@@ -17,6 +17,8 @@ return new class extends Migration
             $table->text('description');
             $table->decimal('price', 10, 2);
             $table->json('images');
+            $table->json('colors')->nullable();
+            $table->json('size')->nullable();
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('subCategory_id');
             $table->unsignedBigInteger('user_id');
@@ -25,6 +27,9 @@ return new class extends Migration
             $table->unsignedBigInteger('rating_sum')->default(0);
             $table->unsignedBigInteger('views_count')->default(0);
             $table->unsignedBigInteger('sales_count')->default(0);
+            $table->integer('discount')->default(0);
+            $table->string('brand')->default('no brand');
+            $table->string('warranty')->default('no warranty');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->foreign('subCategory_id')->references('id')->on('sub_categories')->onDelete('cascade');

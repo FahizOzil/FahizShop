@@ -10,6 +10,6 @@ use Illuminate\Support\Facades\Route;
 // })->middleware('auth:sanctum');
 
 route::post('/register',[AuthController::class,'register'])->name('register');
-route::post('/login',[AuthController::class,'login'])->name('login');
 
-route::get("/product/{id}",[ProductController::class,"productView"]);
+
+// route::get("/product/{id}",[ProductController::class,"productView"]);

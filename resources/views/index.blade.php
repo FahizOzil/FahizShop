@@ -71,10 +71,8 @@
         <div class="row">
             @foreach ($top_ranking as $product)
                 <div class="col-md-4">
-                    @foreach ($product->images as $image)
-                        <x-card :title="$product->title" :url="'uploads/' . $image" :price="$product->price" :id="$product->id"
+                        <x-card :title="$product->title" :url="$product->images['images'][1]" :price="$product->price" :id="$product->id"
                             style="width:20rem" />
-                    @endforeach
                 </div>
             @endforeach
 
@@ -119,10 +117,8 @@
         <div class="row">
             @foreach ($all_product as $product)
                 <div class="col-md-3">
-                    @foreach ($product->images as $image)
-                        <x-card :title="$product->title" :url="'uploads/' . $image" :price="$product->price" :id="$product->id"
+                        <x-card :title="$product->title" :url="$product->images['images'][1]" :price="$product->price" :id="$product->id"
                             style="width:15rem;" />
-                    @endforeach
                 </div>
             @endforeach
 

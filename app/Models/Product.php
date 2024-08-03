@@ -10,13 +10,18 @@ class Product extends Model
 {
     use HasFactory;
 
+    function category(){
+        return $this->belongsTo(Categorie::class);
+    }
 
     protected $casts = [
         'price' => 'float',
-        'images' => 'json'
+        'images' => 'json',
+        'colors' => 'json',
+        'size' => 'json'
     ];
 
-    function getPriceAttribute($value){
-        return Number::currency($value,'PKR');
-    }
+    // function getPriceAttribute($value){
+    //     return Number::currency($value,'PKR');
+    // }
 }

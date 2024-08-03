@@ -10,15 +10,11 @@
             <div class="col-md-12 position-relative d-flex justify-content-center align-items-center">
                 <div class="contact-slider my-3">
                     <img src="images/shopSlider.jpg" width="100%" alt="">
-                    
                 </div>
                 <div class="slider-text position-absolute d-flex ">
                     <h3  style="text-transform:uppercase;font-family:Arial, Helvetica, sans-serif;">Contact Us</h3>
                     <x-breadcrumb  />
                   </div>
-
-                
-
             </div>
         </div>
     </div>
@@ -119,3 +115,7 @@
         </div>
     </div>
 @endsection
+
+@push('js')
+<script src="js/my.js"></script>
+@endpush

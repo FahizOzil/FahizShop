@@ -11,37 +11,20 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+  
     // login user 
    function login(Request $request){
-    $validator = Validator::make(
-        $request->all(),
-        [
-            'email' =>'required|email',
-            'password' => 'required|string|min:8'
-        ]
-        );
-     if ($validator->fails()) {
-        return response()->json([
-           'status' => false,
-           'message' => 'validation Error',
-            'error' => $validator->errors()
-          ],403);
-     }   
-     if (auth()->attempt(['email' => $request->email , 'password' => $request->password])) {
-        $user = auth()->user();
-        return response()->json([
-           'status' => true,
-           'token' => $user->createToken('API TOKEN')->plainTextToken,
-           'token_type' => 'baerer',
-           'message' => 'Login Successful',
-           'data' => $user
-          ],200);
-     }else{
-        return response()->json([
-           'status' => false,
-           'message' => 'Invalid Credentials',
-          ],201);
-     }
+    $validator = $request->validate([
+      'email' => 'required|email',
+      'password' => 'required|min:8|max:20'
+    ]);
+
+    if (auth()->attempt($validator)) {
+      return redirect()->route('home-page');
+    }else{
+      return redirect()->back()->withErrors('Invalid','invalid Credentional')->withInput();
+    }
+    
    }
 
     // register user
@@ -87,7 +70,17 @@ class AuthController extends Controller
          
     }
 
-    
+
+    // logout user
+    function logout(){
+      auth()->logout();
+      return redirect()->route('login-page');
+    }
+
+  
+
+
+      
     
 
 

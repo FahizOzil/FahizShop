@@ -25,12 +25,16 @@
             <div class="col-md-12 my-3">
                 <h4 class="ms-5"> Log in to your account </h4>
               <div class="form-head d-flex justify-content-center">
-                <form class="p-5" id="login-form" method="POST" style="width:40%;border: 1px solid rgb(230, 217, 217)">
+                <form class="p-5" action="{{ route('login') }}" id="login-form" method="POST" style="width:40%;border: 1px solid rgb(230, 217, 217)">
                     @csrf
                    <div class="row">
-                       <x-input label='Email' type='email' id="email" name='email' placeholder='Email Address'></x-input>
-                       <x-input label='Password' id='password' name='password' type='password' placeholder='******'></x-input>
-                       <p id="error"> </p>
+                       <x-input label='Email' type='email'  id="email" name='email' placeholder='Email Address'>
+                        <small class="text-danger"> @error('email') {{ $message }} @enderror </small>
+                       </x-input>
+                       <x-input label='Password' id='password' name='password' type='password' placeholder='******'>
+                        <small class="text-danger"> @error('password') {{ $message }} @enderror  </small>
+                       </x-input>
+                      <p class="error text-danger"> {{ session('Invalid') }} </p> 
                    </div>
                    <span> <a class="text-center" href="">Forgot your password?</a> </span>
                    <div class="register-btn d-flex justify-content-center">
