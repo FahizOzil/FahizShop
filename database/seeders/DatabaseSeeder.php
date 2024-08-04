@@ -26,13 +26,14 @@ class DatabaseSeeder extends Seeder
         //     'password' => bcrypt('fahiz123'),
         //     'address' => 'haji shah ali goth sharafi',
         //     'status' => 'active',
+        //     'role' => 1,
         //     'created_at' => now(),
         //     'updated_at' => now(),
         // ]);
 
-        // Categorie::factory(10)->create();
+        // Categorie::factory()->create();
         // sub_categorie::factory(100)->create();
-        Product::factory(10)->create();
+        // Product::factory(10)->create();
 
     }
 

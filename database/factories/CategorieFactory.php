@@ -17,8 +17,8 @@ class CategorieFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->text(15),
-            'posts' => 4,
+            'name' => 'Groceries',
+            'posts' => 0,
             'created_at' => now(),
             'updated_at' => now(),
         ];
